@@ -7,6 +7,7 @@ class Node:
 class Tree: 
     def __init__(self):
         self.root=None
+
     def insert(self,value):
         newNode=Node(value)
         if self.root is None:
@@ -14,7 +15,7 @@ class Tree:
             return
         temp=self.root
         while True:
-            if value<temp.value:
+            if newNode.value < temp.value:
                 if temp.left is None:
                     temp.left=newNode
                     return
