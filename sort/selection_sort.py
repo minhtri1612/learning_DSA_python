@@ -10,4 +10,4 @@ def selection_sort(arr):
             arr[min_index]=temp
     return arr
 
-print(selection_sort([4,2,6,5,1,3]))
+print(selection_sort([4,2,6,5,1,3,7,8,9,10]))
